@@ -1,16 +1,9 @@
 class Dog 
-  
-  def name=(name)
-    @name
-  end
-  
-  def name
-    @name
-  end
+  attr_accessible :name 
   
   def bark
     puts "woof!"
   end
 end
 
-Dog.new
+this_name = Dog.new
